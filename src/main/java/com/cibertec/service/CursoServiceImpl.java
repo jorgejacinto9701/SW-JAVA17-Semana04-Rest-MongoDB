@@ -5,17 +5,17 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cibertec.entity.Account;
-import com.cibertec.repository.AccountRepository;
+import com.cibertec.entity.Curso;
+import com.cibertec.repository.CursoRepository;
 
 @Service
-public class AccountServiceImpl implements AccountService{
+public class CursoServiceImpl implements CursoService{
 
 	@Autowired
-	private AccountRepository repository;
+	private CursoRepository repository;
 	
 	@Override
-	public List<Account> listaAccount() {
+	public List<Curso> listaCurso() {
 		return repository.findAll();
 	}
 
